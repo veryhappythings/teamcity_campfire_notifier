@@ -51,7 +51,9 @@
                  dest="build/classes"
                  includes="**/*.properties"
                  excludes="**/*.java"/>
-             <copy file="teamcity-plugin.xml" tofile="build/${app}-${version}/teamcity-plugin.xml"/>
+         <copy file="teamcity-plugin.xml" tofile="build/${app}-${version}/teamcity-plugin.xml"/>
+         <copy file="lib/httpclient-4.0.1.jar" tofile="build/${app}-${version}/server/httpclient-4.0.1.jar"/>
+         <copy file="lib/httpcore-4.0.1.jar" tofile="build/${app}-${version}/server/httpcore-4.0.1.jar"/>
     </target>
 
     <target name="dir.build">
